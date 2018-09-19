@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #1-skilgreina breytur x_cord og y_cord. Og input option 
 #2-while loop  með if statements innbyrgðis
 #3-Victory!
