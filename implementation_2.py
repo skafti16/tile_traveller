@@ -11,15 +11,6 @@ def tile(x,y):
 def opening(letter,word):
     if is_open[i] == letter:
         print(word, end='')
-def add(cord, letter):
-    if to_direction == letter:
-        cord += 1
-        return cord
-        
-def subtr(cord, letter):
-    if to_direction == letter:
-        cord -= 1
-        return cord
 
 #byrjun a loop-u 
 while x_cord != 3 or y_cord != 1:
@@ -58,9 +49,17 @@ while x_cord != 3 or y_cord != 1:
             to_direction = input('Direction: ').lower()
 
     else:
-        add(y_cord, 'n')
-        subtr(y_cord, 's')
-        subtr(x_cord, 'w')
-        add(x_cord, 'e')
+        if to_direction == 'n':
+            y_cord += 1
+            continue
+        if to_direction == 's':
+            y_cord -= 1
+            continue
+        if to_direction == 'w':
+            x_cord -= 1
+            continue
+        if to_direction == 'e':
+            x_cord += 1
+            continue 
 else: 
     print('Victory!')
