@@ -2,17 +2,20 @@
 #2-while loop  með if statements innbyrgðis
 #3-Victory!
 #linkur a git ()
+#1. seinni var auðveldari þar sem kóðinn er styttri og mun viðráðanlegri þegar hann er skoðaður
+#2. Seinni er lesanlegri vegna þess að hann er 8x styttri og ekki jafn mikil endurtekning 
+#3.kóðinn varð lesanlegri og endurtekningum var fækkað áttfallt.
 
 #upphafshnit skilgreind
 x_cord,y_cord = 1,1
-
+#functions skilgreindir
 def tile(x,y):
     return x_cord == int(x) and y_cord==int(y) 
 def opening(letter,word):
     if is_open[i] == letter:
         print(word, end='')
 
-#byrjun a loop-u 
+#byrjun a loop-u ath! functions notad
 while x_cord != 3 or y_cord != 1:
 
     if tile(1,1) or tile (2,1):
@@ -36,7 +39,7 @@ while x_cord != 3 or y_cord != 1:
             print('or',end=' ') 
         
         opening('n','(N)orth')
-        opening('e','(E)east')
+        opening('e','(E)ast')
         opening('s','(S)outh')
         opening('w','(W)est')
         if i == len(is_open) - 1:
